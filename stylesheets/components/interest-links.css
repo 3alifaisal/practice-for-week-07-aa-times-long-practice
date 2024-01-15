@@ -1,1 +1,113 @@
 /* Your code here */
+.interest-links {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    
+    grid-template-areas: "dog-image dog-text cat-image cat-text plugin-image plugin-text stocks sun-image temp";
+    margin: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+
+.interest-links > .dog-image {
+    grid-area: dog-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.interest-links > .dog-text{
+    grid-area: dog-text;
+    border-right: 1px solid #e2e2e2;
+
+
+ 
+
+}
+
+.interest-links>.cat-image {
+    grid-area: cat-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.interest-links>.cat-text {
+    grid-area: cat-text;
+   border-right: 1px solid #e2e2e2;
+
+}
+
+.interest-links > .plugin-image {
+    grid-area: plugin-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.interest-links >.plugin-text {
+    grid-area: plugin-text;
+    border-right: 1px solid #e2e2e2;
+}
+
+.interest-links > .stocks {
+    grid-area: stocks;
+    border-right: 1px solid #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+
+  
+}
+.interest-links >.stocks > .stock {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 12px;
+    
+}
+
+.interest-links >.stocks .percentage {
+    color: green;
+    font-weight: bold;
+}
+.interest-links > .sun-image {
+    grid-area: sun-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.interest-links > .temparature {
+    grid-area: temp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+.interest-links img {
+    width: 50%;
+    height: auto;
+}
+.interest-links .title {
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.dog-story, .cat-story, .plug-story {
+    font-size: 12px;
+    
+}
+
+@media(width < 1000px){
+    .interest-links {
+        display: none;
+    }
+}
