@@ -1,1 +1,98 @@
 /* Your code here */
+header .masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "menu-and-search . action-buttons"
+        " . little-technologies  ."
+        "date logo today-paper";
+}
+
+.masthead__menu-and-search {
+    grid-area: menu-and-search;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+.masthead__menu, .masthead__search {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+.masthead_menu:hover, .masthead__search:hover {
+  background-color: #f7f7f5 ;  
+}
+.masthead__action-buttons{
+    grid-area: action-buttons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px 9px;
+    
+
+}
+.masthead__action-buttons > .masthead__settings {
+    margin-left: 10px;
+}
+
+
+.masthead__little-technologies{
+    grid-area: little-technologies;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.masthead__little-technologies  .technology {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 0 5px;
+}
+
+.masthead__date {
+    grid-area: date;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.masthead__logo {
+    grid-area: logo;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+
+}
+
+.masthead__today-paper {
+    grid-area: today-paper;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.masthead__date, .masthead__logo, .masthead__today-paper {
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+}
+
+
+/* overriding the previous css rule for padding */
+.masthead__logo {
+    padding-bottom: 20px;
+}
+
+.masthead__little-technologies > .technologies {
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    border-bottom: none;
+    position: relative;
+    bottom: -1px;
+
+}
+
