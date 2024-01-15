@@ -1,1 +1,12 @@
 /* Your code here */
+.main-nav__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+.main-nav__li{
+    padding: 10px;
+}
