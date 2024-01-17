@@ -197,10 +197,7 @@ margin: 0 15px;
     margin-bottom: 5px;
 }
 
-#sub-side > #sub-lower-right{
-    
 
-}
 
 #sub-lower-right > #ul__sub-nav {
     display: grid;
@@ -239,8 +236,8 @@ margin: 0 15px;
 
 }
 #second-column__sub-nav > .li__sub-nav{
-    margin: 0 0 -20% 0;
-        padding: 0 0 20% 0;
+    margin: 0 0 -10% 0;
+        padding: 0 0 10% 0;
 }
 .article__byLine {
     font-size: 12px;
@@ -259,4 +256,9 @@ margin: 0 15px;
     text-transform: capitalize;
     margin-right: 5px;
     
+}
+@media(width < 1200px){
+    aside{
+        display: none;
+    }
 }
