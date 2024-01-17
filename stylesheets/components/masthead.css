@@ -19,6 +19,10 @@ header .masthead {
     font-size: 11px;
     padding: 7px 9px;
 }
+
+.search-modal--hidden {
+    display: none;
+}
 .masthead_menu:hover, .masthead__search:hover {
   background-color: #f7f7f5 ;  
 }
